@@ -27,6 +27,6 @@ npm run start
 npm run build
 ```
 
-###Tools
+### Tools
 - Vanilla JavaScript
 - Webpack for bundling
