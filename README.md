@@ -26,3 +26,7 @@ npm run start
 ```
 npm run build
 ```
+
+###Tools
+- Vanilla JavaScript
+- Webpack for bundling
