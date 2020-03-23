@@ -146,7 +146,7 @@ class UI {
                     <div class="row pt-4">
                         <div class="col">
                             <p class="mb-0"><strong>${item.treatment_local}</strong></p>
-                            <p>Sri Lankans</p>
+                            <p>SriLankan</p>
                         </div>
                         <div class="col">
                             <p class="mb-0"><strong>${item.treatment_foreign}</strong></p>

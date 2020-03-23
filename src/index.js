@@ -1,6 +1,6 @@
 import './style.css';
 import './scss/style.scss'
-import './assets/slide-placeholder.png';;
+import './assets/main-slider.png';
 
 // Countup Dependency
 import { CountUp } from 'countup.js';
