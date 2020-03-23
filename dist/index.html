@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Chart.js -->
+    <!-- if necessary paste the chart js cdn here -->
+
+    <title>Covid-19 Sri Lanka</title>
+  </head>
+  <body>
+
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Excepteur sint occaecat cupidatat non proident</h1>
+                <h2 class="masthead-subheading mb-0">Duis aute irure dolor in reprehenderit</h2>
+                <!-- <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Creators</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- start container -->
+    <div class="container">
+
+        <div class="report-heading text-center" data-aos="fade-down">
+            <h1 class="animated rubberBand">Live Report</h1>
+            <h5 class="btn btn-dark"><span class="last-updated-date"></span> at <span class="last-updated-time"></span></h5>
+        </div>
+
+        <div class="row button-row">
+            <div class="col-sm"></div>
+            <div class="col-sm btn btn-outline-primary text-center cursor" id="local" data-aos="fade-left">
+
+                        <span class="sl-flag"></span> Our Country
+
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm btn btn-outline-primary text-center cursor" id="global" data-aos="fade-right">
+                        <span class="global"></span> World Wide
+            </div>
+            <div class="col-sm"></div>
+        </div>
+
+        <div class="row row-state text-center" data-aos="fade-down">
+            <!-- state goes here -->
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <section class="chart-section container">
+        <div class="row">
+            <div class="col-sm-6" data-aos="fade-down">
+                <div class="card bg-custom-dark">
+                    <h3 class="text-center">Local Chart</h3>
+                    <canvas id="local-chart" class="pt-3">
+                        <!-- local chart goes here -->
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="col-sm-6" data-aos="fade-down">
+                <div class="card bg-custom-dark">
+                    <h3 class="text-center">Global Chart</h3>
+                    <canvas id="global-chart" class="pt-3">
+                        <!-- global chart goes here -->
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <div class="hospital-wrapper text-center bg-primary">
+        <div data-aos="fade-up">
+        <h1>Status of Hospitals</h1>
+        </div>
+
+    <!-- Hospitals -->
+    <div class="container">
+    <div class="row hospital-row">
+        
+    </div>
+    </div>
+
+    </div>
+
+    <script src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 1500, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    
+    </script>
+</body>
+</html>
