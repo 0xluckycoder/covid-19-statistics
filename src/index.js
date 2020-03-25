@@ -12,7 +12,6 @@ import Chart from 'chart.js';
 import getReport from './components/Data';
 
 import FlagComponent from './components/FlagComponent';
-import IconComponent from './components/IconComponent';
 import UI from './components/UI';
 
 // importing sl flag & global icon
@@ -33,21 +32,14 @@ FlagComponent(slFlag, global);
 // Instantiate UI
 const ui = new UI(allImages, CountUp);
 
-/*
-  State pattern for change the state of the
-  local & global data
-*/
+// State pattern for change the state of the local & global data
 function data(initialDataState = {}) {
     const btnState = initialDataState;
     return {
         setState(newDataState = btnState) {
             return e => {
-                //console.log('Previous state', btnState);
                 Object.assign(btnState, {...newDataState});
-                // console.log('Updated state', newDataState);
-                // btnState.content();
                 btnState.content();
-                console.log(btnState);
                 e.preventDefault();
             }
         }
@@ -97,7 +89,6 @@ hospitalData();
 
 // Chart
 function chart(dataReport, Chart) {
-    console.log('chart',dataReport);
 
     let localTotal = dataReport.data.data.local_total_cases;
     let localDeaths = dataReport.data.data.local_deaths;
@@ -106,9 +97,6 @@ function chart(dataReport, Chart) {
     let globalTotal = dataReport.data.data.global_total_cases;
     let globalDeaths = dataReport.data.data.global_deaths;
     let globalRecovered = dataReport.data.data.global_recovered;
-
-    console.log(localTotal);
-
 
     // local chart
     let localChart = document.querySelector('#local-chart').getContext('2d');

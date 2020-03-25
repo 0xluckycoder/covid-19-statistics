@@ -4,8 +4,10 @@ class UI {
         this.localHospitals = document.querySelector('.hospital-row');
         this.updatedDate = document.querySelector('.last-updated-date');
         this.updatedTime = document.querySelector('.last-updated-time');
+
         // images object
         this.allImages = allImages;
+        
         // count up dependency
         this.countUp = countUp;
     }
