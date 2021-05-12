@@ -5,7 +5,7 @@
   "private": "true",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "countup.js": "^2.0.4",
     "gh-pages": "^2.2.0",
     "webpack-cli": "^3.3.11"
