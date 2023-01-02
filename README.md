@@ -2,7 +2,7 @@
 Hey, I Created this simple Vanilla JS application using https://hpb.health.gov.lk/en API, It shows current statistics about coronavirus
 
 # Link
-https://lakshanofficial.github.io/covid-19-statistics/
+https://0xluckycoder.github.io/covid-19-statistics/
 
 #### Why should you use this website instead of official Gov's website
 - 70% faster
